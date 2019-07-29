@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 12px;
+}
+div#container{
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    margin-bottom: 15px;
+    border-bottom: solid black 2px;
+}
+h1{
+    font-size: 4rem;
+}
+
+#info{
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+#gameArea{
+    width: 360px;
+    height: 360px;
+    background-image: url("../images/blank-sudoku-grid.png");
+    background-repeat: no-repeat;
+}
+
+div#success{
+    width: 360px;
+    height: 360px;
+    font-size: 8rem;
+    color:#e60000;
+    text-align: center;
+    line-height: 360px;
+    border: double 5px #e60000;
+}
+
+input{
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    text-align: center;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+input.empty{
+    color: blue;
+}
+
+#gameArea input.hover{
+    color: red;
+    font-weight: 600;
+}
+section :nth-child(3) div{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+button{
+    border-radius: 6px;
+    font-size: 1.3em;
+    padding: 3px 5px;
+    border-style: solid;
+    background-color: black;
+    color: white;
+}
+
